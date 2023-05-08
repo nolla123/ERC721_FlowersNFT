@@ -12,9 +12,7 @@ contract FlowersNFT is ERC721URIStorage, Ownable {
 
     constructor(string memory _name, string memory _symbol) ERC721(_name, _symbol) {}
 
-    function mint(string memory tokenURI)
-        public
-        returns (uint256)
+    function mint(string memory tokenURI) public returns (uint256)
     {
         _tokenIds.increment();
 
